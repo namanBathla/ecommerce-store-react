@@ -1,4 +1,3 @@
-
 import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import NotFound from './pages/NotFound';
@@ -8,6 +7,7 @@ import Login from './pages/Login';
 import Cart from './pages/Cart';
 import Profile from './pages/Profile';
 import Navbar from './components/Navbar';
+import Signup from './pages/Signup';
 
 function App() {
   const router = createBrowserRouter([
