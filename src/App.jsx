@@ -40,7 +40,7 @@ function App() {
     },
     {
       path: "/signup",
-      element: <Signup />,
+      element: <><Navbar/><Signup /></>,
     },
     {
       path: "/cart",
