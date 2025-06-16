@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-
+import '../index.css';
 function Navbar() {
   return (
     <div className="bg-slate-900 h-16 w-full text-white flex gap-4 p-4">
