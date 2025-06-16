@@ -7,6 +7,7 @@ import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
 import Navbar from "./components/Navbar";
 import Signup from "./pages/Signup";
+import Product from "./components/Product";
 
 function App() {
   const router = createBrowserRouter([
@@ -56,6 +57,15 @@ function App() {
         <>
           <Navbar />
           <Profile />
+        </>
+      ),
+    },
+    {
+      path: "/product",
+      element: (
+        <>
+          <Navbar />
+          <Product />
         </>
       ),
     },
