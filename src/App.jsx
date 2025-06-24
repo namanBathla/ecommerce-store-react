@@ -8,77 +8,11 @@ import Profile from "./pages/Profile";
 import Navbar from "./components/Navbar";
 import Signup from "./pages/Signup";
 import Product from "./components/Product";
+import Layout from "./components/Layout";
+import router from "./routes/router";
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: (
-        <>
-          <Navbar />
-          <Home />
-        </>
-      ),
-    },
-    {
-      path: "/about",
-      element: (
-        <>
-          <Navbar />
-          <About />
-        </>
-      ),
-    },
-    {
-      path: "/login",
-      element: (
-        <>
-          <Navbar />
-          <Login />
-        </>
-      ),
-    },
-    {
-      path: "/signup",
-      element: <><Navbar/><Signup /></>,
-    },
-    {
-      path: "/cart",
-      element: (
-        <>
-          <Navbar />
-          <Cart />
-        </>
-      ),
-    },
-    {
-      path: "/profile/:username",
-      element: (
-        <>
-          <Navbar />
-          <Profile />
-        </>
-      ),
-    },
-    {
-      path: "/product",
-      element: (
-        <>
-          <Navbar />
-          <Product />
-        </>
-      ),
-    },
-    {
-      path: "/*",
-      element: (
-        <>
-          <Navbar />
-          <NotFound />
-        </>
-      ),
-    },
-  ]);
+  
   return (
     <>
       <RouterProvider router={router} />
