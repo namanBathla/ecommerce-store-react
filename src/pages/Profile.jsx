@@ -1,9 +1,9 @@
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
 const Profile = () => {
-    const params = useParams()
+    // const params = useParams()
   return (
-    <div>Welcome user {params.username}</div>
+    <div>Profile</div>
   )
 }
 
